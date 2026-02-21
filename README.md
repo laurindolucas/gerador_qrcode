@@ -57,7 +57,7 @@ python app.py
 ```
 ---
 
-## ✨ Objetivo do projeto
+##  Objetivo do projeto
 
 Criar uma ferramenta simples, confiável e independente para geração de QR Codes, eliminando a necessidade de depender de serviços externos e garantindo que os códigos sempre funcionem quando você precisar.
 
