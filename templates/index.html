@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Qrcode</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <main class="container-principal">
+        <div class="container-nav">
+            <h1 class="page-title">Gerador de Qrcode</h1>
+            <p class="page-description">Transforme qualquer link em um QR Code instantaneamente e sem custo.</p>
+        </div>
+        <div class="container-input">
+            <form method="post" class="form-input">
+                <label for="" class="label-link">Anexe o link abaixo:</label>
+                <input type="text" placeholder="Anexe o link aqui!" class="input-link" name="input-link">
+                <button type="submit" class="button-link">Gerar Qrcode</button>
+            </form>
+
+            {% if qr_base64 %}
+            <h2>Seu QR Code:</h2>
+            <img src="data:image/png;base64,{{ qr_base64 }}" class="qrcode-img">
+            {% endif %}
+
+        </div>
+
+    </main>
+</body>
+
+</html>
