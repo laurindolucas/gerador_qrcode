@@ -83,9 +83,12 @@ body {
 .button-link:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
 }
 
-
+.qrcode-title{
+    margin-top: 20px;
+}
 .qrcode-img {
     width: 200px;
     margin-top: 20px;
